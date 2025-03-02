@@ -1,0 +1,116 @@
+.footer-kld0203{
+    background-color: rgba(204, 204, 204, 0.346);
+    padding:30px 0;
+    .section-1-kld0203{
+        width: 1400px;
+        margin: 0 auto;
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-bottom: 20px;
+        .felm{
+            padding:10px;
+            display:flex;
+            gap:20px;
+            flex-direction: column;
+            .bxil{
+                display:flex;
+                gap:20px;
+                align-items: center;
+                .name{
+                    display:flex;
+                    flex-direction: column;
+                    .abv{
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                    }
+                    .blw{
+                        font-weight: bold;
+                        color:grey;
+                        text-transform: uppercase;
+                        font-size: 13px;
+                        letter-spacing: 1px;
+                    }
+                }
+                img{
+                    width: 100px;
+                    object-fit: cover;
+                }
+            }
+            .content{
+                font-size: 14px;
+                letter-spacing: 1px;
+            }
+        }
+        .selm{
+            display:flex;
+            gap:10px;
+            flex-direction: column;
+            .title{
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 1px;
+            }
+            .bxf{
+                .text{
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                }
+                display:flex;
+                gap:10px;
+                align-items: center;
+            }
+        }
+        .telm{
+            display:flex;
+            gap:10px;
+            flex-direction: column;
+            .title{
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 1px;
+            }
+            .bxf{
+                .text{
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+    hr{
+        width: 1400px;
+        margin:0 auto;
+        padding-bottom: 20px;
+        
+    }
+    .section-2-kld0203{
+        text-align: center;
+    }
+}
+@media (max-width: 950px) {
+    .footer-kld0203{
+        width: 100%;
+        .section-1-kld0203{
+            width: 100%;
+            flex-wrap: wrap;
+            gap:20px;
+            .felm{
+                width: 100%;
+                padding: 0 10px;
+            }
+            .selm{
+                width: 100%;
+                padding: 0 10px;
+            }
+            .telm{
+                width: 100%;
+                padding: 0 10px;
+            }
+        }
+        hr{
+            width: 100%;
+        }
+    }
+}

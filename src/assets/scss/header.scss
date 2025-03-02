@@ -1,0 +1,196 @@
+.hotline-icon-one-pc {
+    z-index: 999;
+    width: max-content;
+    background: rgba(0, 0, 0, 0.542);
+    border-radius: 50%;
+    padding: 10px;
+    animation: pulse 1.5s infinite;
+
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+}
+.hotline-icon-svg {
+    width: 40px;
+}
+.hotline-icon-one-ios {
+    z-index: 999;
+    width: max-content;
+    background: rgba(0, 0, 0, 0.542);
+    border-radius: 50%;
+    padding: 10px;
+    animation: pulse 1.5s infinite;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    display: none;
+}
+.hotline-icon-one-android {
+    z-index: 999;
+    width: max-content;
+    background: rgba(0, 0, 0, 0.542);
+    border-radius: 50%;
+    padding: 10px;
+    animation: pulse 1.5s infinite;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    display: none;
+}
+.hotline-icon-two {
+    z-index: 999;
+    width: max-content;
+    background: rgba(0, 0, 0, 0.542);
+    border-radius: 50%;
+    padding: 10px;
+    animation: pulse 1.5s infinite;
+    position: fixed;
+    bottom: 140px;
+    right: 30px;
+}
+.hotline-icon-three {
+    z-index: 999;
+    width: max-content;
+    background: rgb(255 255 255);
+    border-radius: 50%;
+    padding: 10px;
+    animation: pulse 1.5s infinite;
+    position: fixed;
+    bottom: 190px;
+    left: 20px;
+    right: 0;
+}
+
+.header-sell-website {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: #ffffffd9;
+    box-shadow: -1px 3px 18px #888888;
+    transition: all 0.5s;
+    /* background: linear-gradient(to right, #a8c6f1f7, #edf4fee5); */
+}
+
+.navbar-sell-website {
+    display: flex;
+    align-items: center;
+    max-width: 1360px;
+    margin: 0 auto;
+    justify-content: space-between;
+    .logo {
+        order: 1;
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    .logo-res {
+        order: 1;
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        display: none;
+        img {
+            width: 60px;
+        }
+    }
+    .logo {
+        padding: 10px 0;
+        img {
+            width: 75px;
+            height: 75px;
+            object-fit: cover;
+        }
+        .name {
+            .abv {
+                font-weight: bold;
+                color: black;
+                text-transform: uppercase;
+            }
+            .content {
+                text-transform: uppercase;
+                font-size: 13px;
+                color: grey;
+            }
+        }
+    }
+    .links {
+        order: 2;
+        display: flex;
+        gap: 35px;
+        margin: 0;
+        list-style: none;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
+    .linksf {
+        display: none;
+        order: 2;
+        .links {
+            display: flex;
+            gap: 35px;
+            margin: 0;
+            list-style: none;
+            align-items: center;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+        }
+    }
+    .login-btn {
+        order: 3;
+        border: none;
+        outline: none;
+        background: #151515;
+        /* opacity: 0.1; */
+        color: white;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 600;
+        padding: 10px 18px;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: 0.15s ease;
+        &:hover {
+            background: #151515a6;
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .hotline-icon-one-pc {
+        display: flex;
+    }
+    .hotline-icon-one-ios {
+        display: flex;
+    }
+    .hotline-icon-one-android {
+        display: flex;
+    }
+    .header-sell-website {
+        .navbar-sell-website {
+            flex-direction: column;
+            width: 100%;
+            padding: 10px;
+            .logo {
+                padding: 0;
+            }
+            .links {
+                padding: 10px 0;
+                li {
+                    padding: 0 10px;
+                    font-size: 1.2rem;
+                    text-align: center;
+                }
+            }
+            .login-btn {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
