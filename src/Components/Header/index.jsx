@@ -152,16 +152,16 @@ const Index = () => {
                     <i className={isDropdownMenu ? 'fa fa-chevron-right active-fa-chevron-right' : 'fa fa-chevron-right deactivate-fa-chevron-right'}></i>
                 </div>
                 <ul className={`sub-menu-kld0203 ${isDropdownMenu ? 'open' : ''}`}>
-                    <li><a onClick={() => { scrollTo('kieu-loai'); resetHeaderNav() }}><div>Phế liệu NHÔM</div> <span><i className='fa'></i></span></a></li>
-                    <li><a onClick={() => { scrollTo('kieu-loai'); resetHeaderNav() }}><div>Phế liệu ĐỒNG</div> <span><i className='fa'></i></span></a></li>
-                    <li><a onClick={() => { scrollTo('kieu-loai'); resetHeaderNav() }}><div>Phế liệu SẮT THÉP</div> <span><i className='fa'></i></span></a></li>
-                    <li><a onClick={() => { scrollTo('kieu-loai'); resetHeaderNav() }}><div>Phế liệu INOX</div> <span><i className='fa'></i></span></a></li>
-                    <li><a onClick={() => { scrollTo('kieu-loai'); resetHeaderNav() }}><div>Phế liệu CHÌ</div> <span><i className='fa'></i></span></a></li>
-                    <li><a onClick={() => { scrollTo('kieu-loai'); resetHeaderNav() }}><div>Phế liệu NIKEN</div> <span><i className='fa'></i></span></a></li>
-                    <li><a onClick={() => { scrollTo('kieu-loai'); resetHeaderNav() }}><div>Phế liệu HỢP KIM</div> <span><i className='fa'></i></span></a></li>
-                    <li><a onClick={() => { scrollTo('kieu-loai'); resetHeaderNav() }}><div>Phế liệu THIẾC</div> <span><i className='fa'></i></span></a></li>
-                    <li><a onClick={() => { scrollTo('kieu-loai'); resetHeaderNav() }}><div>THU MUA VẢI</div> <span><i className='fa'></i></span></a></li>
-                    <li><a onClick={() => { scrollTo('kieu-loai'); resetHeaderNav() }}><div>LINH KIỆN ĐIỆN TỬ CŨ</div> <span><i className='fa'></i></span></a></li>
+                    <li><a onClick={() => { scrollTo('kieu-loai'); resetHeaderNav() }}><div>Phế liệu nhôm</div> <span><i className='fa'></i></span></a></li>
+                    <li><a onClick={() => { scrollTo('kieu-loai'); resetHeaderNav() }}><div>Phế liệu đồng</div> <span><i className='fa'></i></span></a></li>
+                    <li><a onClick={() => { scrollTo('kieu-loai'); resetHeaderNav() }}><div>Phế liệu sắt thép</div> <span><i className='fa'></i></span></a></li>
+                    <li><a onClick={() => { scrollTo('kieu-loai'); resetHeaderNav() }}><div>Phế liệu inox</div> <span><i className='fa'></i></span></a></li>
+                    <li><a onClick={() => { scrollTo('kieu-loai'); resetHeaderNav() }}><div>Phế liệu chì</div> <span><i className='fa'></i></span></a></li>
+                    <li><a onClick={() => { scrollTo('kieu-loai'); resetHeaderNav() }}><div>Phế liệu niken</div> <span><i className='fa'></i></span></a></li>
+                    <li><a onClick={() => { scrollTo('kieu-loai'); resetHeaderNav() }}><div>Phế liệu hợp kim</div> <span><i className='fa'></i></span></a></li>
+                    <li><a onClick={() => { scrollTo('kieu-loai'); resetHeaderNav() }}><div>Phế liệu thiếc</div> <span><i className='fa'></i></span></a></li>
+                    <li><a onClick={() => { scrollTo('kieu-loai'); resetHeaderNav() }}><div>Thu mua vải</div> <span><i className='fa'></i></span></a></li>
+                    <li><a onClick={() => { scrollTo('kieu-loai'); resetHeaderNav() }}><div>Linh kiện điện tử cũ</div> <span><i className='fa'></i></span></a></li>
                 </ul>
                 <div className='section-nav-mobile'>
                     <a href='#thac-mac' onClick={() => { scrollTo('thac-mac'); setIsMenu(!isMenu) }}>Thắc mắc</a>
