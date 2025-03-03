@@ -62,11 +62,11 @@
 }
 
 .header-sell-website {
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 98;
     background: #ffffffd9;
     box-shadow: -1px 3px 18px #888888;
     transition: all 0.5s;
@@ -79,6 +79,9 @@
     max-width: 1360px;
     margin: 0 auto;
     justify-content: space-between;
+    i {
+        display: none;
+    }
     .logo {
         order: 1;
         gap: 10px;
@@ -145,7 +148,6 @@
         border: none;
         outline: none;
         background: #151515;
-        /* opacity: 0.1; */
         color: white;
         font-size: 16px;
         display: flex;
@@ -155,11 +157,55 @@
         padding: 10px 18px;
         border-radius: 15px;
         cursor: pointer;
-        transition: 0.15s ease;
+        opacity: 1;
+        height: 50px; /* Điều chỉnh chiều cao tối đa phù hợp */
+        transition:
+            opacity 0.2s ease,
+            height 0.2s ease;
         &:hover {
             background: #151515a6;
         }
     }
+}
+.section-nav-mobile-box {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    text-align: center;
+    background: white;
+    padding: 10px;
+
+    .section-nav-mobile {
+        padding: 10px;
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        img {
+            width: 100px;
+            border-bottom: 1px solid grey;
+            padding-bottom: 30px;
+        }
+    }
+}
+.section-nav-mobile-box.active {
+    display: none;
+}
+.section-nav-mobile-box.deactivate {
+    display: none;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 98;
+    transition: all 0.3s ease;
 }
 
 @media (max-width: 950px) {
@@ -177,8 +223,17 @@
             flex-direction: column;
             width: 100%;
             padding: 10px;
+
             .logo {
-                padding: 0;
+                flex: 1;
+                padding: 0 20px;
+                width: 100%;
+                justify-content: space-around;
+                i {
+                    display: block;
+                    color: black;
+                    font-size: 24px;
+                }
             }
             .links {
                 padding: 10px 0;
@@ -193,4 +248,27 @@
             }
         }
     }
+    .section-nav-mobile-box {
+        display: inline-block;
+    }
+    .section-nav-mobile-box.active {
+        display: inline-block !important;
+        width: 60%;
+        animation: onClick 0.2s forwards;
+        @keyframes onClick {
+            from {
+                width: 0%;
+            }
+            to {
+                width: 60%;
+            }
+        }
+    }
+    .scroll-hide {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 0.3s ease-in-out, max-height 0.5s ease-in-out;
+    }
+    
 }

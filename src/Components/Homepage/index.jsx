@@ -117,7 +117,7 @@ const Index = () => {
     ]);
     return (
         <div className='homepage-kld0203'>
-            <div className="section-1-kld0203" >
+            <div id="home" className="section-1-kld0203" >
                 <img src="https://res.cloudinary.com/dolydpat4/image/upload/v1740910636/02-20210304081801_qussdo.gif" ></img>
                 <div className='introduce'>
                     <div className="bx-introduce">
@@ -159,7 +159,7 @@ const Index = () => {
                     </div>
                 </div>
             </div>
-            <div className="section-2-kld0203">
+            <div id="bao-gia" className="section-2-kld0203">
                 <div className="title animate-kassdev delay-1s">Bảng <span style={{ color: "#ff9900" }}>giá thu mua</span> phế liệu cập nhật gần đây</div>
                 <div className="price-table-container">
                     <table className="price-table">
@@ -194,7 +194,7 @@ const Index = () => {
                     <a href='tel:0908766386' className="btn-ele"><i className='fa fa-phone'></i> 0908766386</a>
                 </div>
             </div>
-            <div className="section-3-kld0203">
+            <div id="ve-chung-toi" className="section-3-kld0203">
                 <div className="col-lg-6 left animate-kassdev delay-1s">
                     <img src="https://res.cloudinary.com/dolydpat4/image/upload/v1740910667/thumuaphelieu-20220905043621_zhgmqa.jpg" alt="" />
                 </div>
@@ -208,7 +208,7 @@ const Index = () => {
                     </div>
                 </div>
             </div>
-            <div className="section-4-kld0203">
+            <div id="ly-do" className="section-4-kld0203">
                 <div className="bx">
                     <div className="title animate-kassdev delay-1s">4 <span style={{ color: "#ff9900" }}>lý do</span> bạn <span style={{ color: "#ff9900" }}>nên</span> chọn phế liệu <span style={{ color: "#ff9900" }}>Thành Phát</span></div>
                     <div className="bxw">
@@ -239,7 +239,7 @@ const Index = () => {
                     </div>
                 </div>
             </div>
-            <div className="section-5-kld0203">
+            <div id="kieu-loai" className="section-5-kld0203">
                 <div className="bx">
                     <div className="title animate-kassdev delay-1s">PHẾ LIỆU  <span style={{ color: "#ff9900" }}>Thành Phát</span>  - THU MUA <span style={{ color: "#ff9900" }}>GIÁ CAO</span> - THU MUA <span style={{ color: "#ff9900" }}>NHANH CHÓNG </span></div>
                     <div className="bxw">
@@ -313,7 +313,7 @@ const Index = () => {
                     </div>
                 </div>
             </div>
-            <div className="section-6-kld0203">
+            <div id="thac-mac" className="section-6-kld0203">
                 <div className="bx">
                     <div className="title animate-kassdev delay-1s">Một số câu hỏi  <span style={{ color: "#ff9900" }}>thường gặp</span></div>
                     <div className="sub-title animate-kassdev delay-1s">Khi mua bán phế liệu tại Thành Phát</div>
@@ -361,7 +361,7 @@ const Index = () => {
                     </div>
                 </div>
             </div>
-            <div className="section-7-kld0203">
+            <div id="loi-ich" className="section-7-kld0203">
                 <div className="bx">
                     <div className="title animate-kassdev delay-1s"><span style={{ color: "#ff9900" }}>lợi ích</span> khách hàng khi <span style={{ color: "#ff9900" }}>làm việc</span> cùng phế liệu <span style={{ color: "#ff9900" }}>Thành Phát</span></div>
                     <div className="bxw">
