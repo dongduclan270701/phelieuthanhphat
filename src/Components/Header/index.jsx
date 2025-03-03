@@ -5,13 +5,13 @@ import Zalo from 'assets/images/zalo-svgrepo-com.svg'
 import Phone from 'assets/images/phone-call-svgrepo-com.svg'
 const Index = () => {
     const [isMenu, setIsMenu] = useState(false)
-    const [isScrolled, setScrolled] = useState(false)
     const scrollTo = (id) => {
         const element = document.getElementById(id)
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' })
         }
     }
+    const [isDropdownMenu, setIsDropdownMenu] = useState(false)
     const [scrollEffect, setScrollEffect] = useState({ opacity: 1, scale: 1, height: '60px' });
     const [scrollEffect1, setScrollEffect1] = useState({ opacity: 1, scale: 1, height: '50px' });
     useEffect(() => {
@@ -23,14 +23,17 @@ const Index = () => {
             let height = `${Math.max(50 - (scrollY / maxScroll) * 50, 0)}px`;
             let padding = `${Math.max(10 - (scrollY / maxScroll) * 10, 0)}px`;
             setScrollEffect({ opacity, scale, height, padding });
-            let height1= `${Math.max(50 - (scrollY / maxScroll) * 30, 0)}px`;
+            let height1 = `${Math.max(50 - (scrollY / maxScroll) * 30, 0)}px`;
             setScrollEffect1({ opacity, scale, height1, padding })
         };
 
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
-
+    const resetHeaderNav = () => {
+        setIsDropdownMenu(false)
+        setIsMenu(false)
+    }
     const isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
     const isAndroid = /Android/.test(navigator.userAgent);
     const zaloLink = isIOS ? 'zalo://qr/p/oy7hpunuybc0' : isAndroid ? 'https://zaloapp.com/qr/p/oy7hpunuybc0' : 'zalo://conversation?phone=0928794999';
@@ -128,7 +131,9 @@ const Index = () => {
             {isMenu && <div className='overlay' onClick={() => setIsMenu(false)}></div>}
             <div className={isMenu ? 'section-nav-mobile-box active' : 'section-nav-mobile-box deactivate'} >
                 <div className='section-nav-mobile'>
-                    <img src={signature} alt="" />
+                    <div className="image">
+                        <img src={signature} alt="" />
+                    </div>
                 </div>
                 <div className='section-nav-mobile'>
                     <a href='#home' onClick={() => { scrollTo('home'); setIsMenu(!isMenu) }}>Trang chủ</a>
@@ -142,9 +147,22 @@ const Index = () => {
                 <div className='section-nav-mobile'>
                     <a href='#ly-do' onClick={() => { scrollTo('ly-do'); setIsMenu(!isMenu) }}>Lý do chọn chúng tôi</a>
                 </div>
-                <div className='section-nav-mobile'>
-                    <a href='#kieu-loai' onClick={() => { scrollTo('kieu-loai'); setIsMenu(!isMenu) }}>Loại phế liệu</a>
+                <div className='section-nav-mobile' onClick={() => setIsDropdownMenu(!isDropdownMenu)}>
+                    <span >Loại phế liệu</span>
+                    <i className={isDropdownMenu ? 'fa fa-chevron-right active-fa-chevron-right' : 'fa fa-chevron-right deactivate-fa-chevron-right'}></i>
                 </div>
+                <ul className={`sub-menu-kld0203 ${isDropdownMenu ? 'open' : ''}`}>
+                    <li><a onClick={() => { scrollTo('kieu-loai'); resetHeaderNav() }}><div>Phế liệu NHÔM</div> <span><i className='fa'></i></span></a></li>
+                    <li><a onClick={() => { scrollTo('kieu-loai'); resetHeaderNav() }}><div>Phế liệu ĐỒNG</div> <span><i className='fa'></i></span></a></li>
+                    <li><a onClick={() => { scrollTo('kieu-loai'); resetHeaderNav() }}><div>Phế liệu SẮT THÉP</div> <span><i className='fa'></i></span></a></li>
+                    <li><a onClick={() => { scrollTo('kieu-loai'); resetHeaderNav() }}><div>Phế liệu INOX</div> <span><i className='fa'></i></span></a></li>
+                    <li><a onClick={() => { scrollTo('kieu-loai'); resetHeaderNav() }}><div>Phế liệu CHÌ</div> <span><i className='fa'></i></span></a></li>
+                    <li><a onClick={() => { scrollTo('kieu-loai'); resetHeaderNav() }}><div>Phế liệu NIKEN</div> <span><i className='fa'></i></span></a></li>
+                    <li><a onClick={() => { scrollTo('kieu-loai'); resetHeaderNav() }}><div>Phế liệu HỢP KIM</div> <span><i className='fa'></i></span></a></li>
+                    <li><a onClick={() => { scrollTo('kieu-loai'); resetHeaderNav() }}><div>Phế liệu THIẾC</div> <span><i className='fa'></i></span></a></li>
+                    <li><a onClick={() => { scrollTo('kieu-loai'); resetHeaderNav() }}><div>THU MUA VẢI</div> <span><i className='fa'></i></span></a></li>
+                    <li><a onClick={() => { scrollTo('kieu-loai'); resetHeaderNav() }}><div>LINH KIỆN ĐIỆN TỬ CŨ</div> <span><i className='fa'></i></span></a></li>
+                </ul>
                 <div className='section-nav-mobile'>
                     <a href='#thac-mac' onClick={() => { scrollTo('thac-mac'); setIsMenu(!isMenu) }}>Thắc mắc</a>
                 </div>
