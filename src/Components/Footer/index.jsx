@@ -57,6 +57,9 @@ const Index = () => {
             <div className="section-2-kld0203">
                 ©2024 All rights reserved Phế Liệu Thành Phát
             </div>
+            <div className="section-2-kld0203">
+            <span className='end-footer' style={{paddingBottom:0, fontSize:'0.8rem'}}><p>WEBSITE CREATED BY <a href="http://kassdev.com" style={{color:'black', textTransform:"uppercase"}} target="_blank" rel="noopener noreferrer">kassdev.com</a></p></span>
+            </div>
         </div>
     );
 }
