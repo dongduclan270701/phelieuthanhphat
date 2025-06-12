@@ -24,11 +24,7 @@ const Index = () => {
                     </div>
                     <div className="bxf">
                         <i className='fa fa-phone'></i>
-                        <div className="text">Hotline: 0928794999</div>
-                    </div>
-                    <div className="bxf">
-                        <i className='fa fa-phone'></i>
-                        <div className="text">Hotline: 0908766386</div>
+                        <div className="text">Hotline: 0389319871</div>
                     </div>
                     <div className="bxf">
                         <i className='fa fa-globe'></i>
