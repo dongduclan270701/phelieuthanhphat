@@ -36,7 +36,7 @@ const Index = () => {
     }
     const isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
     const isAndroid = /Android/.test(navigator.userAgent);
-    const zaloLink = isIOS ? 'zalo://qr/p/12ddhvc03hw2w' : isAndroid ? 'https://zaloapp.com/qr/p/12ddhvc03hw2w' : 'zalo://conversation?phone=0389319871';
+    const zaloLink = isIOS ? 'zalo://qr/p/1n5nuejq36yqe' : isAndroid ? 'https://zaloapp.com/qr/p/1n5nuejq36yqe' : 'zalo://conversation?phone=0908766386';
     return (
         <>
             <div className={isIOS ? 'hotline-icon-one-ios' : isAndroid ? 'hotline-icon-one-android' : 'hotline-icon-one-pc'}>
@@ -45,7 +45,7 @@ const Index = () => {
                 </a>
             </div>
             <div className='hotline-icon-two'>
-                <a href="tel:0389319871"><img src={Phone} className='hotline-icon-svg' alt="Logo" /></a>
+                <a href="tel:0908766386"><img src={Phone} className='hotline-icon-svg' alt="Logo" /></a>
             </div>
             <div className=''>
                 <style>
@@ -107,7 +107,7 @@ const Index = () => {
                             <li>Thu mua phế liệu HCM & các tỉnh lân cận | Giá cao nhất</li>
                         </ul>
                         <a
-                            href="tel:0389319871"
+                            href="tel:0908766386"
                             className="login-btn"
                             style={{
                                 opacity: scrollEffect1.opacity,
@@ -121,7 +121,7 @@ const Index = () => {
                                 color: 'white'
                             }}
                         >
-                            <i className="fa fa-phone" style={{ color: '#ff9900' }}></i> 0389319871
+                            <i className="fa fa-phone" style={{ color: '#ff9900' }}></i> 0908766386
                         </a>
 
                     </nav>

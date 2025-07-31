@@ -104,7 +104,7 @@ const Index = () => {
         },
         {
             category: "Phế liệu công trình",
-            items: [{ name: "Các công trình đang phá dỡ", price: "Liên hệ: 0389319871" }],
+            items: [{ name: "Các công trình đang phá dỡ", price: "Liên hệ: 0908766386" }],
         },
         {
             category: "Giá Pallet phế liệu",
@@ -112,7 +112,7 @@ const Index = () => {
         },
         {
             category: "Phế liệu công trình",
-            items: [{ name: "Các công trình đang phá dỡ", price: "Liên hệ: 0389319871" }],
+            items: [{ name: "Các công trình đang phá dỡ", price: "Liên hệ: 0908766386" }],
         },
     ]);
     return (
@@ -153,7 +153,7 @@ const Index = () => {
                             </div>
                         </div>
                         <div className="btn-intro animate-kassdev delay-6s">
-                            <a href='tel:0389319871' className="btn-ele"><i className='fa fa-phone'></i> 0389319871</a>
+                            <a href='tel:0908766386' className="btn-ele"><i className='fa fa-phone'></i> 0908766386</a>
                         </div>
                     </div>
                 </div>
@@ -189,7 +189,7 @@ const Index = () => {
                     </table>
                 </div>
                 <div className="btn-intro animate-kassdev delay-1s">
-                    <a href='tel:0389319871' className="btn-ele"><i className='fa fa-phone'></i> 0389319871</a>
+                    <a href='tel:0908766386' className="btn-ele"><i className='fa fa-phone'></i> 0908766386</a>
                 </div>
             </div>
             <div id="ve-chung-toi" className="section-3-kld0203">
@@ -306,7 +306,7 @@ const Index = () => {
                         </div>
                     </div>
                     <div className="btn-intro animate-kassdev delay-1s">
-                        <a href='tel:0389319871' className="btn-ele"><i className='fa fa-phone'></i> 0389319871</a>
+                        <a href='tel:0908766386' className="btn-ele"><i className='fa fa-phone'></i> 0908766386</a>
                     </div>
                 </div>
             </div>
@@ -353,7 +353,7 @@ const Index = () => {
                         </div>
                     </div>
                     <div className="btn-intro animate-kassdev delay-1s">
-                        <a href='tel:0389319871' className="btn-ele"><i className='fa fa-phone'></i> 0389319871</a>
+                        <a href='tel:0908766386' className="btn-ele"><i className='fa fa-phone'></i> 0908766386</a>
                     </div>
                 </div>
             </div>
