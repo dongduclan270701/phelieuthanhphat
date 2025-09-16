@@ -36,7 +36,7 @@ const Index = () => {
     }
     const isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
     const isAndroid = /Android/.test(navigator.userAgent);
-    const zaloLink = isIOS ? 'zalo://qr/p/1n5nuejq36yqe' : isAndroid ? 'https://zaloapp.com/qr/p/1n5nuejq36yqe' : 'zalo://conversation?phone=0908766386';
+    const zaloLink = isIOS ? 'zalo://qr/p/1i7yxd14oig0b' : isAndroid ? 'https://zaloapp.com/qr/p/1i7yxd14oig0b' : 'zalo://conversation?phone=0908766386';
     return (
         <>
             <div className={isIOS ? 'hotline-icon-one-ios' : isAndroid ? 'hotline-icon-one-android' : 'hotline-icon-one-pc'}>
